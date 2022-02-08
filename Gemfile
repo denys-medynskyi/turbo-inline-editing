@@ -71,3 +71,5 @@ group :test do
   gem "capybara_accessible_selectors", github: "citizensadvice/capybara_accessible_selectors"
   gem "webdrivers"
 end
+
+gem "stimulus_reflex", "3.5.0.pre8"
