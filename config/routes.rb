@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages
+  devise_for :users
   resources :todos
   resources :pages, only: :index
   get 'pages/index'

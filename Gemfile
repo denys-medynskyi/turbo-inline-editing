@@ -73,3 +73,5 @@ group :test do
 end
 
 gem "stimulus_reflex", "3.5.0.pre8"
+
+gem "devise", "~> 4.8"
