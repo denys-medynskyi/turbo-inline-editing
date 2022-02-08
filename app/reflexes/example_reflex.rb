@@ -32,4 +32,13 @@ class ExampleReflex < ApplicationReflex
   #
   # Learn more at: https://docs.stimulusreflex.com/reflexes#reflex-classes
 
+  def toggle
+    todo = Todo.find(element.dataset[:id])
+    todo.update(checked: !todo.checked)
+  end
+
+  def validate
+    @todo = Todo.new(name: element[:value])
+    @todo.valid?
+  end
 end
